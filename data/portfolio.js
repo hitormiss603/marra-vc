@@ -16,6 +16,7 @@
 // Only high-confidence public findings have a status; Matt confirms the rest.
 window.PORTFOLIO = [
   { name: "ABL Space Systems",  url: "https://ablspacesystems.com", sector: "Space & defense",  status: "active",   note: "Now Long Wall (2025)", logo: "assets/logos/abl.png" },
+  { name: "Addaptation",         url: "", sector: "", status: "", note: "" },
   { name: "Aescape",            url: "https://www.aescape.com", sector: "Robotics", status: "active", note: "", logo: "assets/logos/aescape.png" },
   { name: "Any Question",       url: "https://athletechnews.com/whoop-buys-anyquestion-boosting-ai-chat-capabilities/", sector: "",                 status: "acquired", note: "Acquired by WHOOP", logo: "assets/logos/any-question.png" },
   { name: "Bandit Coffee",      url: "https://www.siliconhillsnews.com/2021/07/17/austin-based-bandit-acquired-by-gopuff/", sector: "Consumer",         status: "acquired", note: "Acquired by Gopuff", logo: "assets/logos/bandit.png" },
@@ -28,6 +29,7 @@ window.PORTFOLIO = [
   { name: "Hostfully",          url: "https://www.hostfully.com", sector: "B2B SaaS", status: "active", note: "", logo: "assets/logos/hostfully.png" },
   { name: "Knox Financial",     url: "https://inman.com/2023/01/09/doorstead-raises-21m-series-b-round-acquires-knox-financial", sector: "Proptech / Fintech",         status: "acquired", note: "Acquired by Doorstead, 2023", logo: "assets/logos/knox.png" },
   { name: "SFR3",               url: "https://www.sfr3.com", sector: "Proptech / Fintech", status: "active", note: "", logo: "assets/logos/sfr3.png" },
+  { name: "Spry",                url: "", sector: "", status: "", note: "" },
   { name: "SunDay",             url: "https://drinkasunday.com", sector: "Disruptive beverage", status: "active", note: "", logo: "assets/logos/sunday.png" },
   { name: "Standard AI",        url: "https://standard.ai", sector: "Computer vision",  status: "active",   note: "Formerly Standard Cognition", logo: "assets/logos/standard-ai.png" },
   // Added from the "Website Logos" Drive folders. Statuses follow the draft; blanks are unconfirmed.
