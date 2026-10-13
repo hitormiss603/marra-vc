@@ -29,7 +29,7 @@ window.PORTFOLIO = [
   { name: "Hostfully",          url: "https://www.hostfully.com", sector: "B2B SaaS", status: "active", note: "", logo: "assets/logos/hostfully.png" },
   { name: "Knox Financial",     url: "https://inman.com/2023/01/09/doorstead-raises-21m-series-b-round-acquires-knox-financial", sector: "Proptech / Fintech",         status: "acquired", note: "Acquired by Doorstead, 2023", logo: "assets/logos/knox.png" },
   { name: "SFR3",               url: "https://www.sfr3.com", sector: "Proptech / Fintech", status: "active", note: "", logo: "assets/logos/sfr3.png" },
-  { name: "Spry",                url: "", sector: "", status: "", note: "" },
+  { name: "Spry",                url: "https://spry.so", sector: "", status: "", note: "", logo: "assets/logos/spry.png" },
   { name: "SunDay",             url: "https://drinkasunday.com", sector: "Disruptive beverage", status: "active", note: "", logo: "assets/logos/sunday.png" },
   { name: "Standard AI",        url: "https://standard.ai", sector: "Computer vision",  status: "active",   note: "Formerly Standard Cognition", logo: "assets/logos/standard-ai.png" },
   // Added from the "Website Logos" Drive folders. Statuses follow the draft; blanks are unconfirmed.
