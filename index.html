@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Matt Marra Ventures</title>
+<meta name="description" content="Matt Marra is an angel investor and advisor in Portsmouth, NH, backing early-stage founders in B2B SaaS, marketplaces, AI and robotics.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2d334f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Overpass:wght@700;800;900&family=Source+Sans+3:wght@400;600;700;900&display=swap">
+<style>
+/* Single light theme on purpose: the full-color logo on white is the primary brand look.
+   Layout: Marra brand kit (Feb 2020). Deep Blue hero band with the silver-diamond motif, white page below, Electric Mint for marks and callouts. */
+:root {
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --ink: #2d334f;
+  --muted: #5f6476;
+  --line: #e3e3e3;
+  --mint: #11e9ae;
+  --accent: #0a8466;
+  --deep: #2d334f;
+  --on-deep: #ffffff;
+  --on-deep-muted: #c5c9d8;
+  --gone: #8d909c;
+  --font-body: "Source Sans 3", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  --font-label: "Overpass", "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "DM Serif Text", Georgia, "Times New Roman", serif;
+  --max: 72rem;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 400 1.125rem/1.6 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--mint); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: var(--max); margin: 0 auto; padding-inline: clamp(1rem, 4vw, 2.5rem); }
+h1, h2, h3 { font-family: var(--font-body); text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
+.label {
+  font: 800 0.75rem/1 var(--font-label); text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted);
+}
+
+/* Header */
+.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4.25rem; }
+.brand { display: flex; align-items: center; text-decoration: none; padding-block: 0.6rem; }
+.brand img { height: 2.125rem; width: auto; display: block; }
+.nav { display: flex; gap: clamp(0.9rem, 2.5vw, 1.75rem); font: 800 0.8125rem/1 var(--font-label); text-transform: uppercase; letter-spacing: 0.1em; }
+.nav a { color: var(--ink); text-decoration: none; padding-block: 0.5rem; }
+.nav a:hover { color: var(--accent); }
+@media (max-width: 34rem) { .nav .opt { display: none; } .brand img { height: 1.75rem; } }
+
+/* Hero */
+.hero-band {
+  background-color: var(--deep); color: var(--on-deep); position: relative; overflow: hidden;
+}
+.hero-band::after {
+  /* the brand's silver-diamond pattern, faded into the right edge */
+  content: ""; position: absolute; inset: 0 0 0 45%; pointer-events: none;
+  background:
+    conic-gradient(from 135deg at 50% 50%, rgba(255,255,255,0.07) 0 90deg, transparent 90deg 180deg, rgba(255,255,255,0.03) 180deg 270deg, transparent 270deg) 0 0 / 5rem 5rem;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 60%);
+          mask-image: linear-gradient(to right, transparent, #000 60%);
+}
+.hero { position: relative; z-index: 1; padding-block: clamp(3.5rem, 9vw, 7rem) clamp(3rem, 6vw, 5rem); }
+.hero .label { color: var(--mint); }
+.hero h1 {
+  font-size: clamp(2.6rem, 7.5vw, 5.75rem); line-height: 0.98; font-weight: 900; max-width: 16ch; margin-top: 1.25rem; letter-spacing: -0.02em;
+}
+.hero h1 em { font: 400 italic 1em/1 var(--font-serif); color: var(--mint); letter-spacing: 0; }
+.hero p.lede { font-size: clamp(1.125rem, 2vw, 1.35rem); color: var(--on-deep-muted); max-width: 42ch; margin: 1.5rem 0 0; }
+.facts {
+  display: flex; flex-wrap: wrap; gap: 1rem 2.5rem; margin: 2.75rem 0 0; padding: 1.5rem 0 0;
+  border-top: 1px solid rgba(255,255,255,0.16); list-style: none;
+}
+.facts li { display: flex; flex-direction: column; gap: 0.45rem; }
+.facts .label { color: var(--on-deep-muted); }
+.facts b { font: 900 1.5rem/1.1 var(--font-body); font-variant-numeric: tabular-nums; }
+.cta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2.25rem; }
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.95rem 1.4rem; border-radius: 3px;
+  font: 800 0.8125rem/1 var(--font-label); text-transform: uppercase; letter-spacing: 0.1em; text-decoration: none; border: 2px solid var(--mint);
+}
+.btn.solid { background: var(--mint); color: #2d334f; }
+.btn.ghost { color: var(--on-deep); border-color: rgba(255,255,255,0.4); }
+.btn.ghost:hover { border-color: var(--mint); }
+
+/* Sections */
+section { padding-block: clamp(3rem, 7vw, 5.5rem); border-top: 1px solid var(--line); }
+.hero-band + section { border-top: 0; }
+.sec-head { display: grid; gap: 0.85rem; margin-bottom: 2.25rem; }
+.sec-head .label { color: var(--accent); }
+.sec-head h2 { font-size: clamp(1.875rem, 4vw, 2.75rem); line-height: 1.08; font-weight: 900; }
+
+/* About */
+.about { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 4rem); }
+@media (max-width: 52rem) { .about { grid-template-columns: 1fr; } }
+.about p { margin: 0 0 1rem; max-width: 62ch; }
+.about p a { padding-block: 0.6rem; }
+.about-side { display: grid; gap: 2rem; align-content: start; padding-top: 0.25rem; }
+.about-side .label { margin: 0 0 0.75rem; }
+.about-side .chips { margin: 0; }
+.funds { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.funds li { border-bottom: 1px solid var(--line); }
+.funds a { display: flex; justify-content: space-between; align-items: center; padding: 0.85rem 0; color: var(--ink); font-weight: 700; text-decoration: none; }
+.funds a::after { content: "\2197"; color: var(--accent); font-weight: 400; }
+.funds a:hover { color: var(--accent); }
+.lp { margin-top: 3rem; }
+.lp .label { margin: 0 0 0.75rem; }
+.lp .funds { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 2rem; }
+@media (max-width: 40rem) { .lp .funds { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1rem; } }
+.timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; align-content: start; }
+.timeline li {
+  display: grid; grid-template-columns: 4rem minmax(0, 1fr); gap: 1rem; padding: 0.95rem 0; border-bottom: 1px solid var(--line);
+}
+.timeline li:first-child { border-top: 1px solid var(--line); }
+.timeline time { font: 800 0.9rem/1.7 var(--font-label); color: var(--accent); font-variant-numeric: tabular-nums; }
+.timeline span { color: var(--ink); font-weight: 600; }
+.timeline small { display: block; color: var(--muted); font-size: 0.9375rem; font-weight: 400; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.75rem 0 1.5rem; padding: 0; list-style: none; }
+.chips li.key { border-color: var(--mint); background: color-mix(in srgb, var(--mint) 14%, var(--surface)); }
+.chips li { padding: 0.4rem 0.8rem; border: 1px solid var(--line); border-radius: 3px; font-size: 0.9375rem; font-weight: 600; background: var(--surface); }
+
+/* Portfolio */
+.filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+.filters button {
+  font: 800 0.75rem/1 var(--font-label); text-transform: uppercase; letter-spacing: 0.1em;
+  padding: 0.65rem 0.95rem; border-radius: 3px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer;
+}
+.filters button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.filters .count { opacity: 0.6; margin-left: 0.35rem; font-variant-numeric: tabular-nums; }
+.grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  gap: 1px; background: var(--line); border: 1px solid var(--line); list-style: none; margin: 0; padding: 0;
+}
+.co { position: relative; background: var(--surface); padding: 1.25rem 1.25rem 1.1rem; display: flex; flex-direction: column; gap: 0.5rem; min-height: 8.5rem; min-width: 0; }
+.co-head { display: flex; align-items: center; min-height: 3.25rem; min-width: 0; }
+.co-head h3 { min-width: 0; }
+.logo { display: block; height: 2.75rem; width: auto; max-width: min(100%, 10rem); object-fit: contain; object-position: left center; }
+.co h3.has-logo { line-height: 0; }
+.co.closed .logo { filter: grayscale(1); opacity: 0.6; }
+.co h3 { font-size: 1.3rem; font-weight: 700; line-height: 1.15; }
+.co h3 a { color: var(--ink); text-decoration: none; }
+.co h3 a:hover { color: var(--accent); }
+.co h3 a::after { content: ""; position: absolute; inset: 0; }
+.co:has(h3 a):hover { background: #fbfcfd; }
+.co h3 a:focus-visible { outline: none; }
+.co:has(h3 a:focus-visible) { outline: 2px solid var(--accent); outline-offset: -2px; }
+.co .meta { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-top: auto; }
+.co .sector { color: var(--muted); font-size: 0.9375rem; }
+.co .note { color: var(--muted); font-size: 0.9375rem; margin: 0; }
+.pill { font: 800 0.6875rem/1 var(--font-label); text-transform: uppercase; letter-spacing: 0.1em; padding: 0.4rem 0.55rem 0.3rem; border-radius: 3px; border: 1px solid currentColor; white-space: nowrap; }
+.pill.active { color: var(--accent); }
+.pill.ipo { color: #2d334f; background: var(--mint); border-color: var(--mint); }
+.pill.acquired { color: var(--ink); }
+.pill.exited { color: var(--ink); background: color-mix(in srgb, var(--mint) 22%, transparent); border-color: transparent; }
+.pill.closed { color: var(--gone); }
+.co.closed h3 { color: var(--gone); }
+.port-note { color: var(--muted); font-size: 1rem; margin: 1.25rem 0 0; max-width: 62ch; }
+
+/* Press */
+.press { list-style: none; margin: 0; padding: 0; }
+.press li { border-bottom: 1px solid var(--line); }
+.press .row {
+  display: grid; grid-template-columns: 7rem minmax(0, 1fr) auto; gap: 1rem; align-items: baseline;
+  padding: 1rem 0; color: var(--ink); text-decoration: none;
+}
+a.row:hover .t { color: var(--accent); }
+.press .t { font-weight: 600; }
+.press time { font: 800 0.8125rem/1.5 var(--font-label); text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-variant-numeric: tabular-nums; }
+.press .src { color: var(--muted); font-size: 0.9375rem; text-align: right; }
+#press .more { margin-top: 1rem; font: 800 0.8125rem/1 var(--font-label); text-transform: uppercase; letter-spacing: 0.06em; background: none; border: 1px solid var(--line); color: var(--ink); padding: 0.8rem 1.1rem; border-radius: 999px; cursor: pointer; }
+@media (max-width: 40rem) {
+  .press .row { grid-template-columns: minmax(0, 1fr); gap: 0.25rem; }
+  .press .src { text-align: left; }
+}
+
+/* Contact */
+.contact { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 2rem; align-items: end; }
+@media (max-width: 52rem) { .contact { grid-template-columns: 1fr; } }
+.contact .big { font: 400 clamp(1.9rem, 5vw, 3.4rem)/1.1 var(--font-serif); word-break: break-word; margin: 0; }
+.contact .big a { color: var(--ink); text-decoration-color: var(--mint); text-decoration-thickness: 3px; text-underline-offset: 6px; }
+.contact address { font-style: normal; color: var(--muted); }
+.copy { margin-left: 0.75rem; font: 800 0.6875rem/1 var(--font-label); text-transform: uppercase; letter-spacing: 0.1em; background: none; border: 1px solid var(--line); border-radius: 3px; padding: 0.5rem 0.7rem; color: var(--muted); cursor: pointer; vertical-align: middle; }
+
+footer { border-top: 1px solid var(--line); padding-block: 2rem 3rem; color: var(--muted); font-size: 0.9375rem; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; }
+footer .mark { height: 1.75rem; width: auto; display: block; }
+footer .left { display: flex; align-items: center; gap: 0.75rem; }
+footer nav { display: flex; gap: 1.25rem; }
+footer a { color: var(--muted); }
+/* Phones */
+.nav a { padding-block: 0.9rem; }
+footer nav a { display: inline-block; padding-block: 0.6rem; }
+.copy { padding: 0.75rem 0.9rem; }
+.filters button { min-height: 2.75rem; }
+@media (max-width: 40rem) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .co { padding: 0.9rem 0.85rem; min-height: 0; gap: 0.35rem; }
+  .co h3 { font-size: 1.05rem; overflow-wrap: anywhere; }
+  .co-head { min-height: 2.5rem; }
+  .logo { height: 2.1rem; }
+  .co .note, .co .sector { font-size: 0.8125rem; line-height: 1.35; }
+  .co .meta { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+  .co .meta .sector:empty { display: none; }
+  .co h3 a { display: inline-block; padding-block: 0.4rem; margin-block: -0.4rem; }
+  .sec-head { margin-bottom: 1.5rem; }
+  .facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem 1rem; }
+  .facts .label { line-height: 1.35; }
+  .facts li { justify-content: space-between; }
+}
+@media (max-width: 23rem) {
+  .nav { gap: 0.75rem; font-size: 0.75rem; letter-spacing: 0.06em; }
+  .brand img { height: 1.5rem; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="marra.vc, home">
+      <img class="on-light" src="assets/logo.png" alt="marra.vc" width="446" height="96">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="opt" href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a class="opt" href="#press">Press</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero-band">
+  <div class="wrap hero">
+    <p class="label">Matt Marra Ventures &amp; Advisory · Portsmouth, NH</p>
+    <h1>Capital and operating help for <em>early founders.</em></h1>
+    <p class="lede">I'm a father, founder, investor and advisor. I back companies where AI software runs a physical product or real-world operations.</p>
+    <div class="cta">
+      <a class="btn solid" href="#portfolio">See the portfolio</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+    <ul class="facts">
+      <li><span class="label">Uber employee #33</span><b>2011</b></li>
+      <li><span class="label">Angel investor</span><b>2016</b></li>
+      <li><span class="label">Became a father</span><b>2019</b></li>
+      <li><span class="label">Co-Founder, SunDay Drinks</span><b>2025</b></li>
+    </ul>
+  </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <div class="sec-head">
+          <p class="label">About</p>
+          <h2>Father, founder, investor and advisor.</h2>
+        </div>
+        <p>I started my career at IBM's One Madison Avenue office in New York, in a consulting leadership development program. I realized big companies weren't for me, and in 2011 I joined Uber as employee #33 to launch its Boston operations.</p>
+        <p>At Uber, I launched and scaled Uber Black, TAXI, SUV and uberX in Boston, then led the Operations &amp; Logistics Analytics and Process teams through hypergrowth from 2011 to 2013. In 2013 I launched a second marketplace, Uber Vehicle Solutions, running its operations across the East Coast and Midwest and leading negotiations with auto lenders, rental companies, dealerships and manufacturers on driver-partner offerings, reporting to the CFO.</p>
+        <p>I've been angel investing since 2016, and after my career at Uber I began advising companies in 2018. Then, after <a href="https://lnkd.in/p/gbb5Phyb" target="_blank" rel="noopener">a health issue</a>, I co-founded <a href="https://drinkasunday.com" target="_blank" rel="noopener">SunDay Drinks</a> in 2025, a direct-to-consumer non-alcoholic beverage brand.</p>
+        <p>My investment thesis has stayed mostly the same: B2B software, marketplaces, AI and robotics. What has sharpened is that a physical, real-world product or operation powered by AI software is now close to a requirement for me.</p>
+        <p>I split my time between Portsmouth, NH and Boston, and invest alongside several Uber alumni syndicates.</p>
+      </div>
+      <aside class="about-side">
+        <div>
+          <p class="label">Focus</p>
+          <ul class="chips">
+            <li class="key">AI software + real-world operations</li><li>B2B SaaS</li><li>Marketplaces</li><li>AI / ML</li><li>Robotics</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="label">Portfolio</p>
+        <h2>Investments &amp; advisory roles</h2>
+      </div>
+      <div class="filters" role="group" aria-label="Filter by status" id="filters"></div>
+      <ul class="grid" id="grid"></ul>
+      <p class="port-note">Includes angel investments, advisory agreements and employee equity, from pre-seed to Series B.</p>
+      <div class="lp">
+        <p class="label">Limited partner in</p>
+        <ul class="funds">
+          <li><a href="https://www.constructcap.com/" target="_blank" rel="noopener">Construct Capital</a></li>
+          <li><a href="https://www.rackhouse.vc/" target="_blank" rel="noopener">Rackhouse</a></li>
+          <li><a href="https://mcj.vc/" target="_blank" rel="noopener">MCJ Collective</a></li>
+          <li><a href="https://www.revupfund.com/" target="_blank" rel="noopener">RevUp Capital</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="press">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="label">Press</p>
+        <h2>In the news</h2>
+      </div>
+      <!-- Articles live in data/news.js -->
+      <ul class="press" id="news"></ul>
+      <button class="more" type="button" id="news-more" hidden>Show all</button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact">
+      <div>
+        <div class="sec-head">
+          <p class="label">Contact</p>
+          <h2>Building something? Send a note.</h2>
+        </div>
+        <p class="big"><a href="mailto:info@marra.vc">info@marra.vc</a><button class="copy" type="button" data-copy="info@marra.vc">Copy</button></p>
+      </div>
+      <address>25 Market Street<br>Portsmouth, NH 03801</address>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="left"><img class="mark" src="assets/mark.png" alt="" width="360" height="360"><span>© <span id="yr">2026</span> Matt Marra Ventures &amp; Advisory</span></div>
+    <nav aria-label="Social">
+      <a href="https://www.linkedin.com/in/matt-marra/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://twitter.com/Marra" target="_blank" rel="noopener">X / Twitter</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="data/portfolio.js"></script>
+<script src="data/news.js"></script>
+<script>
+(function () {
+  var data = (window.PORTFOLIO || []).filter(function (c) { return c.show !== false; })
+    .sort(function (a, b) { return a.name.localeCompare(b.name); });
+  var labels = { all: "All", active: "Active", ipo: "IPO", acquired: "Acquired", exited: "Exit", closed: "Closed" };
+  var grid = document.getElementById("grid");
+  var filters = document.getElementById("filters");
+  var current = "all";
+
+  function esc(s) { return String(s || "").replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); }
+
+  function render() {
+    grid.innerHTML = data.filter(function (c) { return current === "all" || c.status === current; }).map(function (c) {
+      var label = c.logo ? '<img class="logo" src="' + esc(c.logo) + '" alt="' + esc(c.name) + '">' : esc(c.name);
+      var name = c.url ? '<a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + label + "</a>" : label;
+      return '<li class="co ' + esc(c.status) + '"><div class="co-head"><h3' + (c.logo ? ' class="has-logo"' : "") + ">" + name + "</h3></div>" +
+        (c.note ? '<p class="note">' + esc(c.note) + "</p>" : "") +
+        '<div class="meta"><span class="sector">' + esc(c.sector) + "</span>" +
+        (c.status ? '<span class="pill ' + esc(c.status) + '">' + esc(labels[c.status] || c.status) + "</span>" : "") +
+        "</div></li>";
+    }).join("");
+  }
+
+  var keys = ["all"].concat(["active", "ipo", "acquired", "exited", "closed"].filter(function (k) {
+    return data.some(function (c) { return c.status === k; });
+  }));
+  if (keys.length > 2) {
+    filters.innerHTML = keys.map(function (k) {
+      var n = k === "all" ? data.length : data.filter(function (c) { return c.status === k; }).length;
+      return '<button type="button" data-k="' + k + '" aria-pressed="' + (k === current) + '">' + labels[k] + '<span class="count">' + n + "</span></button>";
+    }).join("");
+    filters.addEventListener("click", function (e) {
+      var b = e.target.closest("button"); if (!b) return;
+      current = b.getAttribute("data-k");
+      filters.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+      render();
+    });
+  } else {
+    filters.hidden = true;
+  }
+  render();
+
+  var news = window.NEWS || [], newsList = document.getElementById("news"), newsMore = document.getElementById("news-more");
+  var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  function renderNews(all) {
+    newsList.innerHTML = news.slice(0, all ? news.length : 6).map(function (n) {
+      var d = n.date.split("-");
+      return '<li><a class="row" href="' + esc(n.url) + '" target="_blank" rel="noopener"><time datetime="' + esc(n.date) + '">' + months[+d[1] - 1] + " " + d[0] + '</time><span class="t">' + esc(n.title) + '</span><span class="src">' + esc(n.source) + "</span></a></li>";
+    }).join("");
+    newsMore.hidden = all || news.length <= 6;
+  }
+  newsMore.addEventListener("click", function () { renderNews(true); });
+  renderNews(false);
+
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  document.querySelectorAll("[data-copy]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var text = btn.getAttribute("data-copy");
+      var done = function () { btn.textContent = "Copied"; setTimeout(function () { btn.textContent = "Copy"; }, 1500); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, function () {});
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
