@@ -6,6 +6,7 @@
 //   sector   Short label, e.g. "B2B SaaS", "Robotics"
 //   status   "active" | "ipo" | "acquired" | "exited" | "closed"
 //            exited = Matt sold his position (e.g. in a secondary)
+//   role     Optional extra badge, e.g. "Founder"
 //   note     Optional short line, e.g. "Acquired by Acme, 2024"
 //   logo     Optional path to a logo image, e.g. "assets/logos/padsplit.png" (no logo shows if blank)
 //   show     false hides the company without deleting the entry
@@ -31,7 +32,7 @@ window.PORTFOLIO = [
   { name: "Knox Financial",     url: "https://inman.com/2023/01/09/doorstead-raises-21m-series-b-round-acquires-knox-financial", sector: "Proptech / Fintech",         status: "acquired", note: "Acquired by Doorstead, 2023", logo: "assets/logos/knox.png" },
   { name: "SFR3",               url: "https://www.sfr3.com", sector: "Proptech / Fintech", status: "active", note: "", logo: "assets/logos/sfr3.png" },
   { name: "Spry",                url: "https://spry.so", sector: "B2B SaaS / College athletics", status: "active", note: "Athletic department ops & NIL compliance", logo: "assets/logos/spry.png" },
-  { name: "SunDay",             url: "https://drinkasunday.com", sector: "Disruptive beverage", status: "active", note: "", logo: "assets/logos/sunday.png" },
+  { name: "SunDay",             url: "https://drinkasunday.com", sector: "Disruptive beverage", status: "active", role: "Founder", note: "Disrupting the alcohol market with DTC & retail hemp RTDs. Co-founded with industry experts.", logo: "assets/logos/sunday.png" },
   { name: "Standard AI",        url: "https://standard.ai", sector: "Computer vision",  status: "active",   note: "Formerly Standard Cognition", logo: "assets/logos/standard-ai.png" },
   // Added from the "Website Logos" Drive folders. Statuses follow the draft; blanks are unconfirmed.
   { name: "Lime",                url: "https://www.li.me", sector: "Mobility", status: "ipo", note: "Nasdaq: LIME", logo: "assets/logos/lime.png" },
