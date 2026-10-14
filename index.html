@@ -374,7 +374,7 @@ footer nav a { display: inline-block; padding-block: 0.6rem; }
       var label = c.logo ? '<img class="logo" src="' + esc(c.logo) + '" alt="' + esc(c.name) + '">' : esc(c.name);
       var name = c.url ? '<a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + label + "</a>" : label;
       return '<li class="co ' + esc(c.status) + '"><div class="co-head"><h3' + (c.logo ? ' class="has-logo"' : "") + ">" + name + "</h3></div>" +
-        (c.note ? '<p class="note">' + esc(c.note) + "</p>" : "") +
+        (c.note ? '<p class="note">' + esc(c.note).replace(/\n/g, "<br>") + "</p>" : "") +
         '<div class="meta"><span class="sector">' + esc(c.sector) + "</span>" +
         '<span class="pills">' + (c.role ? '<span class="pill role">' + esc(c.role) + "</span>" : "") +
         (c.status ? '<span class="pill ' + esc(c.status) + '">' + esc(labels[c.status] || c.status) + "</span>" : "") +
