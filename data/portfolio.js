@@ -27,7 +27,7 @@ window.PORTFOLIO = [
   { name: "Dyno",               url: "https://joindyno.com", sector: "Healthcare",       status: "active", note: "", logo: "assets/logos/dyno.png" },
   { name: "Further",            url: "https://withfurther.com", sector: "Real estate / Fintech",                 status: "active",   note: "AI homebuying platform for lenders, guiding buyers from search to closing", logo: "assets/logos/further.png" },
   { name: "Health Haven Rx",    url: "https://www.healthhavenrx.com", sector: "Healthcare",       status: "active",         note: "", logo: "assets/logos/health-haven-rx.png" },
-  { name: "High Time Foods",    url: "https://hightimefoods.com", sector: "Disruptive food",         status: "active",         note: "", logo: "assets/logos/high-time-foods.png" },
+  { name: "High Time Foods",    url: "https://hightimefoods.com", sector: "Disruptive food",         status: "active",         note: "Shelf-stable, high-protein Indian snacks made with pea and wheat protein", logo: "assets/logos/high-time-foods.png" },
   { name: "Hostfully",          url: "https://www.hostfully.com", sector: "B2B SaaS", status: "active", note: "Guest experience & property management software for rentals", logo: "assets/logos/hostfully.png" },
   { name: "Knox Financial",     url: "https://www.doorstead.com", sector: "Proptech / Fintech",         status: "acquired", note: "Turned your old home into a rental investment while you bought your next one. Acquired by Doorstead, 2023", logo: "assets/logos/knox.png" },
   { name: "Spry",                url: "https://spry.so", sector: "B2B SaaS / College athletics", status: "active", note: "Athletic department ops & NIL compliance", logo: "assets/logos/spry.png" },
