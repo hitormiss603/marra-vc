@@ -16,7 +16,7 @@
 // Only high-confidence public findings have a status; Matt confirms the rest.
 window.PORTFOLIO = [
   { name: "ABL Space Systems",  url: "https://ablspacesystems.com", sector: "Space & defense",  status: "active",   note: "Now Long Wall (2025)", logo: "assets/logos/abl.png" },
-  { name: "Addapptation",        url: "", sector: "", status: "", note: "" },
+  { name: "Propensity",          url: "https://www.propensity.com", sector: "B2B SaaS / ABM", status: "active", note: "Formerly Addapptation", logo: "assets/logos/propensity.png" },
   { name: "Aescape",            url: "https://www.aescape.com", sector: "Robotics", status: "active", note: "", logo: "assets/logos/aescape.png" },
   { name: "Any Question",       url: "https://athletechnews.com/whoop-buys-anyquestion-boosting-ai-chat-capabilities/", sector: "",                 status: "acquired", note: "Acquired by WHOOP", logo: "assets/logos/any-question.png" },
   { name: "Bandit Coffee",      url: "https://www.siliconhillsnews.com/2021/07/17/austin-based-bandit-acquired-by-gopuff/", sector: "Consumer",         status: "acquired", note: "Acquired by Gopuff", logo: "assets/logos/bandit.png" },
