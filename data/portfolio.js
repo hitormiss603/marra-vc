@@ -23,7 +23,7 @@ window.PORTFOLIO = [
   { name: "Any Question",       url: "https://www.whoop.com", sector: "AI / Expert knowledge", status: "acquired", note: "Living library of expert insights. Acquired by WHOOP", logo: "assets/logos/any-question.png" },
   { name: "Bandit Coffee",      url: "https://www.gopuff.com", sector: "Food delivery", status: "acquired", note: "App-only coffee shop. Acquired by Gopuff, 2021 to launch Gopuff Kitchen", logo: "assets/logos/bandit.png" },
   { name: "Camber",             url: "https://privatejetcardcomparisons.com/2022/12/07/vista-global-acquires-online-private-jet-charter-broker-camber", sector: "Private aviation", status: "acquired", note: "Acquired by XOJet", logo: "assets/logos/camber.png" },
-  { name: "Datanomix",          url: "https://datanomix.io", sector: "Industrial AI",    status: "active",   note: "", logo: "assets/logos/datanomix.png" },
+  { name: "Datanomix",          url: "https://datanomix.io", sector: "Industrial AI",    status: "active",   note: "Automated production monitoring that finds root causes on the factory floor", logo: "assets/logos/datanomix.png" },
   { name: "Dyno",               url: "https://joindyno.com", sector: "Healthcare",       status: "active", note: "", logo: "assets/logos/dyno.png" },
   { name: "Further",            url: "https://withfurther.com", sector: "Real estate / Fintech",                 status: "active",   note: "AI homebuying platform for lenders, guiding buyers from search to closing", logo: "assets/logos/further.png" },
   { name: "Health Haven Rx",    url: "https://www.healthhavenrx.com", sector: "Healthcare",       status: "active",         note: "", logo: "assets/logos/health-haven-rx.png" },
