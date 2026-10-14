@@ -36,7 +36,7 @@ window.PORTFOLIO = [
   // Added from the "Website Logos" Drive folders. Statuses follow the draft; blanks are unconfirmed.
   { name: "Lime",                url: "https://www.li.me", sector: "Mobility", status: "ipo", note: "Nasdaq: LIME", logo: "assets/logos/lime.png" },
   { name: "WEVEN",               url: "https://www.theknot.com", sector: "Events marketplace", status: "acquired", note: "Formerly Mayflower Venues. Acquired by The Knot Worldwide", logo: "assets/logos/weven.png" },
-  { name: "Metrobi",             url: "https://metrobi.com", sector: "B2B mobility", status: "active", note: "", logo: "assets/logos/metrobi.png" },
+  { name: "Metrobi",             url: "https://metrobi.com", sector: "B2B mobility", status: "active", note: "On-demand delivery drivers rated by local businesses", logo: "assets/logos/metrobi.png" },
   { name: "Machinery Partner",   url: "https://www.machinerypartner.com", sector: "Heavy machinery marketplace", status: "acquired", note: "Acquired by Phoenix Tailings, 2026", logo: "assets/logos/machinery-partner.png" },
   { name: "PadSplit",            url: "https://www.padsplit.com", sector: "Proptech / Fintech", status: "active", note: "", logo: "assets/logos/padsplit.png" },
   { name: "Replicated",          url: "https://www.replicated.com", sector: "B2B SaaS / Infrastructure", status: "active", note: "", logo: "assets/logos/replicated.png" },
