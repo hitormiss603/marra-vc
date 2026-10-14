@@ -46,5 +46,5 @@ window.PORTFOLIO = [
   { name: "Torre",               url: "https://torre.ai", sector: "AI recruiting", status: "active", note: "AI talent agent automating recruiting and job search", logo: "assets/logos/torre.png" },
   { name: "TruckMap",            url: "https://www.tenstreet.com/blog/about-tenstreet/tenstreet-announces-acquisition-of-truckmap-launch-of-new-rewards-true-fuel-programs", sector: "Logistics", status: "acquired", note: "Acquired by Tenstreet", logo: "assets/logos/truckmap.png" },
   { name: "UptimeHealth",        url: "https://www.uptimehealth.com", sector: "B2B SaaS / Medical equipment", status: "active", note: "Equipment, facilities & compliance management for medical, dental and vet practices", logo: "assets/logos/uptimehealth.png" },
-  { name: "WEVO",                url: "https://wevo.ai", sector: "AI martech", status: "exited", note: "", logo: "assets/logos/wevo.png" },
+  { name: "WEVO",                url: "https://wevo.ai", sector: "AI martech", status: "exited", note: "AI simulations plus real-user testing for products and campaigns", logo: "assets/logos/wevo.png" },
 ];
