@@ -73,13 +73,16 @@ h1, h2, h3 { font-family: var(--font-body); text-wrap: balance; margin: 0; lette
   background-color: var(--deep); color: var(--on-deep); position: relative; overflow: hidden;
 }
 .hero-band::after {
-  /* the brand's silver-diamond pattern, faded into the right edge */
-  content: ""; position: absolute; inset: 0 0 0 45%; pointer-events: none;
-  background:
-    conic-gradient(from 135deg at 50% 50%, rgba(255,255,255,0.07) 0 90deg, transparent 90deg 180deg, rgba(255,255,255,0.03) 180deg 270deg, transparent 270deg) 0 0 / 5rem 5rem;
-  -webkit-mask-image: linear-gradient(to right, transparent, #000 60%);
-          mask-image: linear-gradient(to right, transparent, #000 60%);
+  /* the brand board's silver-diamond pattern in a blue tint, faded in from the left.
+     The tile is centred so its 5rem grid lines up with the logomark below at any width. */
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: url("assets/pattern.svg") 50% 0 / 40rem 40rem repeat;
+  -webkit-mask-image: linear-gradient(to right, transparent 40%, #000 75%);
+          mask-image: linear-gradient(to right, transparent 40%, #000 75%);
 }
+/* the logomark sits on the pattern grid, 2 x 2 cells, like the brand board cover */
+.hero-mark { position: absolute; z-index: 1; left: calc(50% + 20rem); top: 10rem; width: 10rem; height: 10rem; pointer-events: none; }
+@media (max-width: 68rem) { .hero-mark { display: none; } }
 .hero { position: relative; z-index: 1; padding-block: clamp(3.5rem, 9vw, 7rem) clamp(3rem, 6vw, 5rem); }
 .hero .label { color: var(--mint); }
 .hero h1 {
@@ -255,6 +258,7 @@ footer nav a { display: inline-block; padding-block: 0.6rem; }
 
 <main id="top">
   <div class="hero-band">
+    <img class="hero-mark" src="assets/mark-on-blue.png" alt="" width="480" height="480">
   <div class="wrap hero">
     <p class="label">Matt Marra Ventures &amp; Advisory · Portsmouth, NH</p>
     <h1>Capital and operating help for <em>early founders.</em></h1>
