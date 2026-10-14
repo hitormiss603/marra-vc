@@ -34,7 +34,7 @@ window.PORTFOLIO = [
   { name: "SunDay",             url: "https://drinkasunday.com", sector: "Disruptive beverage", status: "active", note: "", logo: "assets/logos/sunday.png" },
   { name: "Standard AI",        url: "https://standard.ai", sector: "Computer vision",  status: "active",   note: "Formerly Standard Cognition", logo: "assets/logos/standard-ai.png" },
   // Added from the "Website Logos" Drive folders. Statuses follow the draft; blanks are unconfirmed.
-  { name: "Lime",                url: "https://www.nasdaq.com/market-activity/stocks/lime", sector: "Mobility", status: "ipo", note: "Nasdaq: LIME", logo: "assets/logos/lime.png" },
+  { name: "Lime",                url: "https://www.li.me", sector: "Mobility", status: "ipo", note: "Nasdaq: LIME", logo: "assets/logos/lime.png" },
   { name: "WEVEN",               url: "https://www.theknot.com", sector: "Events marketplace", status: "acquired", note: "Formerly Mayflower Venues. Acquired by The Knot Worldwide", logo: "assets/logos/weven.png" },
   { name: "Metrobi",             url: "https://metrobi.com", sector: "B2B mobility", status: "active", note: "", logo: "assets/logos/metrobi.png" },
   { name: "Machinery Partner",   url: "https://www.machinerypartner.com", sector: "Industrial AI", status: "acquired", note: "Acquired by Phoenix Tailings, 2026", logo: "assets/logos/machinery-partner.png" },
