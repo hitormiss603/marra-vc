@@ -32,7 +32,7 @@ window.PORTFOLIO = [
   { name: "Knox Financial",     url: "https://www.doorstead.com", sector: "Proptech / Fintech",         status: "acquired", note: "Acquired by Doorstead, 2023", logo: "assets/logos/knox.png" },
   { name: "Spry",                url: "https://spry.so", sector: "B2B SaaS / College athletics", status: "active", note: "Athletic department ops & NIL compliance", logo: "assets/logos/spry.png" },
   { name: "SunDay",             url: "https://drinkasunday.com", sector: "Disruptive beverage", status: "active", role: "Founder", note: "Disrupting the alcohol market with DTC & retail hemp RTDs. Co-founded with industry experts.", logo: "assets/logos/sunday.png" },
-  { name: "Standard AI",        url: "https://standard.ai", sector: "Computer vision",  status: "active",   note: "Formerly Standard Cognition", logo: "assets/logos/standard-ai.png" },
+  { name: "Standard AI",        url: "https://standard.ai", sector: "Computer vision",  status: "active",   note: "AI camera intelligence on in-store shopping and inventory. Formerly Standard Cognition", logo: "assets/logos/standard-ai.png" },
   // Added from the "Website Logos" Drive folders. Statuses follow the draft; blanks are unconfirmed.
   { name: "Lime",                url: "https://www.li.me", sector: "Mobility", status: "ipo", note: "Nasdaq: LIME", logo: "assets/logos/lime.png" },
   { name: "WEVEN",               url: "https://www.theknot.com", sector: "Events marketplace", status: "acquired", note: "Formerly Mayflower Venues. Acquired by The Knot Worldwide", logo: "assets/logos/weven.png" },
