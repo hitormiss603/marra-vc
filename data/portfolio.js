@@ -29,7 +29,7 @@ window.PORTFOLIO = [
   { name: "Health Haven Rx",    url: "https://www.healthhavenrx.com", sector: "Healthcare",       status: "active",         note: "", logo: "assets/logos/health-haven-rx.png" },
   { name: "High Time Foods",    url: "https://hightimefoods.com", sector: "Disruptive food",         status: "active",         note: "", logo: "assets/logos/high-time-foods.png" },
   { name: "Hostfully",          url: "https://www.hostfully.com", sector: "B2B SaaS", status: "active", note: "Guest experience & property management software for rentals", logo: "assets/logos/hostfully.png" },
-  { name: "Knox Financial",     url: "https://www.doorstead.com", sector: "Proptech / Fintech",         status: "acquired", note: "Acquired by Doorstead, 2023", logo: "assets/logos/knox.png" },
+  { name: "Knox Financial",     url: "https://www.doorstead.com", sector: "Proptech / Fintech",         status: "acquired", note: "Turned your old home into a rental investment while you bought your next one. Acquired by Doorstead, 2023", logo: "assets/logos/knox.png" },
   { name: "Spry",                url: "https://spry.so", sector: "B2B SaaS / College athletics", status: "active", note: "Athletic department ops & NIL compliance", logo: "assets/logos/spry.png" },
   { name: "SunDay",             url: "https://drinkasunday.com", sector: "Disruptive beverage", status: "active", role: "Founder", note: "Disrupting the alcohol market with DTC & retail hemp RTDs. Co-founded with industry experts.", logo: "assets/logos/sunday.png" },
   { name: "Standard AI",        url: "https://standard.ai", sector: "Computer vision",  status: "active",   note: "AI camera intelligence on in-store shopping and inventory. Formerly Standard Cognition", logo: "assets/logos/standard-ai.png" },
