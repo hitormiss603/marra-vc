@@ -44,7 +44,7 @@ window.PORTFOLIO = [
   { name: "Salido",              url: "https://www.businesswire.com/news/home/20200910005577/en/Restaurant-Operating-System-SALIDO-Announces-Sale-to-North-American-Bancard", sector: "Restaurant tech", status: "acquired", note: "Acquired by North American Bancard, 2020", logo: "assets/logos/salido.png" },
   { name: "Scoot Science",       url: "https://www.scootscience.com", sector: "B2B SaaS / Aquaculture data", status: "active", note: "", logo: "assets/logos/scoot-science.png" },
   { name: "SVRF",                url: "https://www.auganix.org/creative-augmented-reality-platform-provider-poplar-acquires-svrf-inc/", sector: "Augmented reality", status: "acquired", note: "AR face filter and 3D content marketplace. Acquired by Poplar Studio", logo: "assets/logos/svrf.png" },
-  { name: "Torre",               url: "https://torre.ai", sector: "AI recruiting", status: "active", note: "", logo: "assets/logos/torre.png" },
+  { name: "Torre",               url: "https://torre.ai", sector: "AI recruiting", status: "active", note: "AI talent agent automating recruiting and job search", logo: "assets/logos/torre.png" },
   { name: "TruckMap",            url: "https://www.tenstreet.com/blog/about-tenstreet/tenstreet-announces-acquisition-of-truckmap-launch-of-new-rewards-true-fuel-programs", sector: "Logistics", status: "acquired", note: "Acquired by Tenstreet", logo: "assets/logos/truckmap.png" },
   { name: "UptimeHealth",        url: "https://www.uptimehealth.com", sector: "B2B SaaS / Medical equipment", status: "active", note: "", logo: "assets/logos/uptimehealth.png" },
   { name: "WEVO",                url: "https://wevo.ai", sector: "AI martech", status: "exited", note: "", logo: "assets/logos/wevo.png" },
