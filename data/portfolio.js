@@ -17,7 +17,7 @@
 // Only high-confidence public findings have a status; Matt confirms the rest.
 window.PORTFOLIO = [
   { name: "Uber",                url: "https://www.uber.com", sector: "Mobility", status: "ipo", note: "NYSE: UBER\nOperations & Strategic Finance employee", logo: "assets/logos/uber.png" },
-  { name: "ABL Space Systems",  url: "https://ablspacesystems.com", sector: "Space & defense",  status: "active",   note: "Now Long Wall (2025)", logo: "assets/logos/abl.png" },
+  { name: "ABL Space Systems",  url: "https://ablspacesystems.com", sector: "Space & defense",  status: "active",   note: "Low-cost rocket and deployable launch system for commercial satellites. Now Long Wall (2025)", logo: "assets/logos/abl.png" },
   { name: "Propensity",          url: "https://www.propensity.com", sector: "AI martech", status: "active", note: "Formerly Addapptation", logo: "assets/logos/propensity.png" },
   { name: "Aescape",            url: "https://www.aescape.com", sector: "Robotics", status: "active", note: "Robotic massage that 3D-maps your body and adapts in real time", logo: "assets/logos/aescape.png" },
   { name: "Any Question",       url: "https://www.whoop.com", sector: "AI / Expert knowledge", status: "acquired", note: "Living library of expert insights. Acquired by WHOOP", logo: "assets/logos/any-question.png" },
