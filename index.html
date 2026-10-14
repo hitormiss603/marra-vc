@@ -194,7 +194,8 @@ a.row:hover .t { color: var(--accent); }
 }
 
 /* Contact */
-.contact { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 2rem; align-items: end; }
+.contact { display: grid; grid-template-columns: auto minmax(0, 1.4fr) minmax(0, 1fr); gap: 2rem 2.5rem; align-items: center; }
+.contact .me { width: clamp(8rem, 16vw, 11rem); height: clamp(8rem, 16vw, 11rem); border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 4px var(--mint); display: block; }
 @media (max-width: 52rem) { .contact { grid-template-columns: 1fr; } }
 .contact .big { font: 400 clamp(1.9rem, 5vw, 3.4rem)/1.1 var(--font-serif); word-break: break-word; margin: 0; }
 .contact .big a { color: var(--ink); text-decoration-color: var(--mint); text-decoration-thickness: 3px; text-underline-offset: 6px; }
@@ -328,6 +329,7 @@ footer nav a { display: inline-block; padding-block: 0.6rem; }
 
   <section id="contact">
     <div class="wrap contact">
+      <img class="me" src="assets/matt.jpg?v=2" alt="Matt Marra" width="480" height="480">
       <div>
         <div class="sec-head">
           <p class="label">Contact</p>
