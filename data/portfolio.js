@@ -19,7 +19,7 @@ window.PORTFOLIO = [
   { name: "Uber",                url: "https://www.uber.com", sector: "Mobility", status: "ipo", note: "NYSE: UBER\nOperations & Strategic Finance employee", logo: "assets/logos/uber.png" },
   { name: "ABL Space Systems",  url: "https://ablspacesystems.com", sector: "Space & defense",  status: "active",   note: "Now Long Wall (2025)", logo: "assets/logos/abl.png" },
   { name: "Propensity",          url: "https://www.propensity.com", sector: "AI martech", status: "active", note: "Formerly Addapptation", logo: "assets/logos/propensity.png" },
-  { name: "Aescape",            url: "https://www.aescape.com", sector: "Robotics", status: "active", note: "Intelligent robotic massage, controlled entirely by you", logo: "assets/logos/aescape.png" },
+  { name: "Aescape",            url: "https://www.aescape.com", sector: "Robotics", status: "active", note: "Robotic massage that 3D-maps your body and adapts in real time", logo: "assets/logos/aescape.png" },
   { name: "Any Question",       url: "https://www.whoop.com", sector: "AI / Expert knowledge", status: "acquired", note: "Living library of expert insights. Acquired by WHOOP", logo: "assets/logos/any-question.png" },
   { name: "Bandit Coffee",      url: "https://www.gopuff.com", sector: "Food delivery", status: "acquired", note: "App-only coffee shop. Acquired by Gopuff, 2021 to launch Gopuff Kitchen", logo: "assets/logos/bandit.png" },
   { name: "Camber",             url: "https://privatejetcardcomparisons.com/2022/12/07/vista-global-acquires-online-private-jet-charter-broker-camber", sector: "Private aviation", status: "acquired", note: "Acquired by XOJet", logo: "assets/logos/camber.png" },
