@@ -19,7 +19,7 @@ window.PORTFOLIO = [
   { name: "ABL Space Systems",  url: "https://ablspacesystems.com", sector: "Space & defense",  status: "active",   note: "Now Long Wall (2025)", logo: "assets/logos/abl.png" },
   { name: "Propensity",          url: "https://www.propensity.com", sector: "AI martech", status: "active", note: "Formerly Addapptation", logo: "assets/logos/propensity.png" },
   { name: "Aescape",            url: "https://www.aescape.com", sector: "Robotics", status: "active", note: "", logo: "assets/logos/aescape.png" },
-  { name: "Any Question",       url: "https://athletechnews.com/whoop-buys-anyquestion-boosting-ai-chat-capabilities/", sector: "",                 status: "acquired", note: "Acquired by WHOOP", logo: "assets/logos/any-question.png" },
+  { name: "Any Question",       url: "https://athletechnews.com/whoop-buys-anyquestion-boosting-ai-chat-capabilities/", sector: "AI / Expert knowledge", status: "acquired", note: "Living library of expert insights. Acquired by WHOOP", logo: "assets/logos/any-question.png" },
   { name: "Bandit Coffee",      url: "https://www.siliconhillsnews.com/2021/07/17/austin-based-bandit-acquired-by-gopuff/", sector: "Consumer",         status: "acquired", note: "Acquired by Gopuff", logo: "assets/logos/bandit.png" },
   { name: "Camber",             url: "https://privatejetcardcomparisons.com/2022/12/07/vista-global-acquires-online-private-jet-charter-broker-camber", sector: "Private aviation", status: "acquired", note: "Acquired by XOJet", logo: "assets/logos/camber.png" },
   { name: "Datanomix",          url: "https://datanomix.io", sector: "Industrial AI",    status: "active",   note: "", logo: "assets/logos/datanomix.png" },
