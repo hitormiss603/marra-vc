@@ -128,7 +128,8 @@ section { padding-block: clamp(3rem, 7vw, 5.5rem); border-top: 1px solid var(--l
 .funds a:hover { color: var(--accent); }
 .lp { margin-top: 3rem; }
 .lp .label { margin: 0 0 0.75rem; }
-.lp .funds { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 2rem; }
+.lp .funds { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); column-gap: 2rem; }
+@media (max-width: 64rem) { .lp .funds { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 40rem) { .lp .funds { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1rem; } }
 .timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; align-content: start; }
 .timeline li {
@@ -316,6 +317,7 @@ footer nav a { display: inline-block; padding-block: 0.6rem; }
           <li><a href="https://www.rackhouse.vc/" target="_blank" rel="noopener">Rackhouse</a></li>
           <li><a href="https://mcj.vc/" target="_blank" rel="noopener">MCJ Collective</a></li>
           <li><a href="https://www.revupfund.com/" target="_blank" rel="noopener">RevUp Capital</a></li>
+          <li><a href="https://www.sfr3.com/" target="_blank" rel="noopener">SFR3</a></li>
         </ul>
       </div>
     </div>
