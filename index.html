@@ -360,15 +360,17 @@ footer nav a { display: inline-block; padding-block: 0.6rem; }
 (function () {
   var data = (window.PORTFOLIO || []).filter(function (c) { return c.show !== false; })
     .sort(function (a, b) { return a.name.localeCompare(b.name); });
-  var labels = { all: "All", active: "Active", ipo: "IPO", acquired: "Acquired", exited: "Exit", closed: "Closed" };
+  var labels = { all: "All", founder: "Founder", active: "Active", ipo: "IPO", acquired: "Acquired", exited: "Exit", closed: "Closed" };
   var grid = document.getElementById("grid");
   var filters = document.getElementById("filters");
   var current = "all";
 
+  function match(c, k) { return k === "all" || (k === "founder" ? c.role === "Founder" : c.status === k); }
+
   function esc(s) { return String(s || "").replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); }
 
   function render() {
-    grid.innerHTML = data.filter(function (c) { return current === "all" || c.status === current; }).map(function (c) {
+    grid.innerHTML = data.filter(function (c) { return match(c, current); }).map(function (c) {
       var label = c.logo ? '<img class="logo" src="' + esc(c.logo) + '" alt="' + esc(c.name) + '">' : esc(c.name);
       var name = c.url ? '<a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + label + "</a>" : label;
       return '<li class="co ' + esc(c.status) + '"><div class="co-head"><h3' + (c.logo ? ' class="has-logo"' : "") + ">" + name + "</h3></div>" +
@@ -380,12 +382,12 @@ footer nav a { display: inline-block; padding-block: 0.6rem; }
     }).join("");
   }
 
-  var keys = ["all"].concat(["active", "ipo", "acquired", "exited", "closed"].filter(function (k) {
-    return data.some(function (c) { return c.status === k; });
+  var keys = ["all"].concat(["founder", "active", "ipo", "acquired", "exited", "closed"].filter(function (k) {
+    return data.some(function (c) { return match(c, k); });
   }));
   if (keys.length > 2) {
     filters.innerHTML = keys.map(function (k) {
-      var n = k === "all" ? data.length : data.filter(function (c) { return c.status === k; }).length;
+      var n = data.filter(function (c) { return match(c, k); }).length;
       return '<button type="button" data-k="' + k + '" aria-pressed="' + (k === current) + '">' + labels[k] + '<span class="count">' + n + "</span></button>";
     }).join("");
     filters.addEventListener("click", function (e) {
