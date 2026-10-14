@@ -25,7 +25,7 @@ window.PORTFOLIO = [
   { name: "Camber",             url: "https://privatejetcardcomparisons.com/2022/12/07/vista-global-acquires-online-private-jet-charter-broker-camber", sector: "Private aviation", status: "acquired", note: "Acquired by XOJet", logo: "assets/logos/camber.png" },
   { name: "Datanomix",          url: "https://datanomix.io", sector: "Industrial AI",    status: "active",   note: "", logo: "assets/logos/datanomix.png" },
   { name: "Dyno",               url: "https://joindyno.com", sector: "Healthcare",       status: "active", note: "", logo: "assets/logos/dyno.png" },
-  { name: "Further",            url: "https://withfurther.com", sector: "Real estate / Fintech",                 status: "active",   note: "", logo: "assets/logos/further.png" },
+  { name: "Further",            url: "https://withfurther.com", sector: "Real estate / Fintech",                 status: "active",   note: "AI homebuying platform for lenders, guiding buyers from search to closing", logo: "assets/logos/further.png" },
   { name: "Health Haven Rx",    url: "https://www.healthhavenrx.com", sector: "Healthcare",       status: "active",         note: "", logo: "assets/logos/health-haven-rx.png" },
   { name: "High Time Foods",    url: "https://hightimefoods.com", sector: "Disruptive food",         status: "active",         note: "", logo: "assets/logos/high-time-foods.png" },
   { name: "Hostfully",          url: "https://www.hostfully.com", sector: "B2B SaaS", status: "active", note: "Guest experience & property management software for rentals", logo: "assets/logos/hostfully.png" },
