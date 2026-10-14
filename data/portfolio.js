@@ -16,7 +16,7 @@
 // DRAFT: merged from the Drive logo folders and /mnt/project-files/current-site/portfolio-status-draft.md.
 // Only high-confidence public findings have a status; Matt confirms the rest.
 window.PORTFOLIO = [
-  { name: "Uber",                url: "https://www.uber.com", sector: "Mobility", status: "ipo", note: "NYSE: UBER", logo: "assets/logos/uber.png" },
+  { name: "Uber",                url: "https://www.uber.com", sector: "Mobility", status: "ipo", note: "Operations & Strategic Finance employee. NYSE: UBER", logo: "assets/logos/uber.png" },
   { name: "ABL Space Systems",  url: "https://ablspacesystems.com", sector: "Space & defense",  status: "active",   note: "Now Long Wall (2025)", logo: "assets/logos/abl.png" },
   { name: "Propensity",          url: "https://www.propensity.com", sector: "AI martech", status: "active", note: "Formerly Addapptation", logo: "assets/logos/propensity.png" },
   { name: "Aescape",            url: "https://www.aescape.com", sector: "Robotics", status: "active", note: "", logo: "assets/logos/aescape.png" },
