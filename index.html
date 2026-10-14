@@ -382,7 +382,7 @@ footer nav a { display: inline-block; padding-block: 0.6rem; }
     }).join("");
   }
 
-  var keys = ["all"].concat(["founder", "active", "ipo", "acquired", "exited", "closed"].filter(function (k) {
+  var keys = ["all"].concat(["acquired", "active", "closed", "exited", "founder", "ipo"].filter(function (k) {
     return data.some(function (c) { return match(c, k); });
   }));
   if (keys.length > 2) {
