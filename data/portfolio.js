@@ -16,7 +16,7 @@
 // Only high-confidence public findings have a status; Matt confirms the rest.
 window.PORTFOLIO = [
   { name: "ABL Space Systems",  url: "https://ablspacesystems.com", sector: "Space & defense",  status: "active",   note: "Now Long Wall (2025)", logo: "assets/logos/abl.png" },
-  { name: "Addaptation",         url: "", sector: "", status: "", note: "" },
+  { name: "Addapptation",        url: "", sector: "", status: "", note: "" },
   { name: "Aescape",            url: "https://www.aescape.com", sector: "Robotics", status: "active", note: "", logo: "assets/logos/aescape.png" },
   { name: "Any Question",       url: "https://athletechnews.com/whoop-buys-anyquestion-boosting-ai-chat-capabilities/", sector: "",                 status: "acquired", note: "Acquired by WHOOP", logo: "assets/logos/any-question.png" },
   { name: "Bandit Coffee",      url: "https://www.siliconhillsnews.com/2021/07/17/austin-based-bandit-acquired-by-gopuff/", sector: "Consumer",         status: "acquired", note: "Acquired by Gopuff", logo: "assets/logos/bandit.png" },
@@ -36,6 +36,7 @@ window.PORTFOLIO = [
   { name: "Lime",                url: "https://www.nasdaq.com/market-activity/stocks/lime", sector: "Mobility", status: "ipo", note: "Nasdaq: LIME", logo: "assets/logos/lime.png" },
   { name: "WEVEN",               url: "https://www.theknotww.com", sector: "Events marketplace", status: "acquired", note: "Formerly Mayflower Venues. Acquired by The Knot Worldwide" },
   { name: "Metrobi",             url: "https://metrobi.com", sector: "B2B mobility", status: "active", note: "", logo: "assets/logos/metrobi.png" },
+  { name: "Machinery Partner",   url: "https://pulse2.com/phoenix-tailings-acquires-machinery-partner-to-expand-ai-and-automation-capabilities-for-rare-earth-processing/amp/", sector: "Industrial AI", status: "acquired", note: "Acquired by Phoenix Tailings, 2026" },
   { name: "PadSplit",            url: "https://www.padsplit.com", sector: "Proptech / Fintech", status: "active", note: "", logo: "assets/logos/padsplit.png" },
   { name: "Replicated",          url: "https://www.replicated.com", sector: "B2B SaaS / Infrastructure", status: "active", note: "", logo: "assets/logos/replicated.png" },
   { name: "Salido",              url: "https://www.businesswire.com/news/home/20200910005577/en/Restaurant-Operating-System-SALIDO-Announces-Sale-to-North-American-Bancard", sector: "Restaurant tech", status: "acquired", note: "Acquired by North American Bancard, 2020", logo: "assets/logos/salido.png" },
