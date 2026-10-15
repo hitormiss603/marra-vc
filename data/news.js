@@ -1,6 +1,7 @@
 // "In the news" list for marra.vc, newest first. Every item links to the original article.
 // Fields: date ("YYYY-MM"), title (the article's headline), source, url, company (optional tag).
 window.NEWS = [
+  { date: "2026-10", title: "Tom Brady, Aescape launch AI-powered massage & recovery protocols", source: "Athletech News", url: "https://athletechnews.com/tom-brady-aescape-ai-powered-massage-recovery-protocol/", company: "Aescape" },
   { date: "2026-07", title: "Uber-backed Lime prices its IPO at $25 a share, raising about $174m", source: "The Next Web", url: "https://thenextweb.com/news/lime-ipo-priced-25-dollars-nasdaq", company: "Lime" },
   { date: "2026-05", title: "Phoenix Tailings acquires Machinery Partner to accelerate AI-driven rare earth production", source: "PR Newswire", url: "https://www.prnewswire.com/news-releases/phoenix-tailings-acquires-machinery-partner-to-accelerate-ai-driven-rare-earth-production-and-strengthen-americas-critical-minerals-leadership-302766890.html", company: "Machinery Partner" },
   { date: "2026-01", title: "Our investment in Propensity", source: "Riverside Acceleration Capital", url: "https://www.riversidecompany.com/rac/our-blog/posts/our-investment-in-propensity", company: "Propensity" },
